@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C1</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="top-bar" id="topbar"><div class="container"><div class="row"><div class="span12"><a class="logo pull-left" href="#intro"><span></span></a><div class="navbar main-nav pull-right"><button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><nav><div class="nav-collapse collapse"><ul id="mainnav" class="nav"><li><a href="#about">关于</a></li><li><a href="#speakers">设计师</a></li><li><a href="#schedule">活动日程</a></li><li><a href="#workshops">工作室</a></li><li><a href="#venue">地点</a></li><li><a href="#sponsors">销售商</a></li><li><a href="#news">新闻</a></li><li><a href="#contact">联系方式</a></li></ul></div></nav></div></div></div></div></header>
+<%= yield %>
+
+</body>
+</html>
